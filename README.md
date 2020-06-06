@@ -1,9 +1,4 @@
-# Görli testnet DAppNode package
-
-[![DAppNodeStore Available](https://img.shields.io/badge/DAppNodeStore-Available-brightgreen.svg)](http://my.dappnode/#/installer/geth.dnp.dappnode.eth)
-
-
-[![Geth github](https://img.shields.io/badge/Geth-Github-blue.svg)](https://github.com/ethereum/go-ethereum)
+# BrightID IDChain DAppNode package
 
 You can use this package without installing it in your DAppNode following these instructions:
 
@@ -54,7 +49,7 @@ You can edit the `docker-compose.yml` and add extra options, such as:
 If the package is running and you're connected to your dappnode you can use:
 ```
 var Web3 = require('web3');
-var web3 = new Web3('ws://my.geth.dappnode:8546')
+var web3 = new Web3('ws://my.idchain.dappnode:8546')
 web3.eth.getBlockNumber().then(console.log)
 ```
 In case you are running it locally:
