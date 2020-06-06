@@ -1,29 +1,28 @@
 {
-  "name": "geth.dnp.dappnode.eth",
-  "version": "0.1.5",
-  "upstreamVersion": "v1.9.11",
-  "shortDescription": "Geth is the official Go implementation of the Ethereum protocol.",
-  "description": "Ethereum is a global, open-source platform for decentralized applications where you can write code that controls digital value, runs exactly as programmed, and is accessible anywhere in the world.",
+  "name": "idchain.dnp.dappnode.eth",
+  "version": "0.0.1",
+  "upstreamVersion": "v1.9.14",
+  "shortDescription": "IDChain from BrightID.",
+  "description": "IDChain from BrightID.",
   "type": "library",
   "chain": "ethereum",
-  "author": "DAppNode Association <admin@dappnode.io> (https://github.com/dappnode)",
+  "author": "BrightID developers (https://github.com/BrightID)",
   "contributors": [
-    "Mariano Conti (nanexcool) (hhttps://github.com/nanexcool)",
-    "Eduardo Antuña <eduadiez@gmail.com> (https://github.com/eduadiez)"
+    "Michael Bauer <michael@brightid.org>"
   ],
   "categories": [
     "Blockchain"
   ],
   "license": "GLP-3.0",
   "links": {
-    "endpoint": "http://geth.dappnode:8545",
-    "homepage": "https://github.com/dappnode/DAppNodePackage-geth#readme"
+    "endpoint": "http://idchain.dappnode:8545",
+    "homepage": "https://github.com/BrightID/DAppNodePackage-IDChain/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dappnode/DAppNodePackage-geth.git"
+    "url": "https://github.com/BrightID/DAppNodePackage-IDChain.git"
   },
   "bugs": {
-    "url": "https://github.com/dappnode/DAppNodePackage-geth/issues"
+    "url": "https://github.com/BrightID/DAppNodePackage-IDChain/issues"
   }
 }
