@@ -3,10 +3,27 @@
   "version": "0.0.1",
   "upstreamVersion": "v1.9.14",
   "shortDescription": "IDChain from BrightID.",
-  "description": "IDChain from BrightID.",
+  "description": "Ethereum-based proof-of-authority blockchain with democratically-elected validators, unique human accounts; used by BrightID for consensus.",
   "type": "library",
+  "image": {
+    "path": "idchain.dnp.dappnode.eth_0.0.1.tar.xz",
+    "hash": "/ipfs/QmU9NcjvkKwZr8UidT1XhvL68HMcK8ysK4EGXUZaxf1JbA",
+    "size": 20465164,
+    "restart": "always",
+    "environment": [
+      "EXTRA_OPTS=--rpcapi eth,net,web3,txpool",
+      "SYNCMODE=fast"
+    ],
+    "volumes": [
+      "idchain:/idchain"
+    ],
+    "ports": [
+      "30329:30329",
+      "30329:30329/udp"
+    ]
+  },
   "chain": "ethereum",
-  "author": "BrightID developers (https://github.com/BrightID)",
+  "author": "BrightID developers <support@brightid.org> (https://github.com/BrightID)",
   "contributors": [
     "Michael Bauer <michael@brightid.org>"
   ],
@@ -16,7 +33,8 @@
   "license": "GLP-3.0",
   "links": {
     "endpoint": "http://idchain.dappnode:8545",
-    "homepage": "https://github.com/BrightID/DAppNodePackage-IDChain/"
+    "homepage": "https://github.com/BrightID/DAppNodePackage-IDChain/",
+    "explorer": "https://explorer.idchain.one/"
   },
   "repository": {
     "type": "git",
@@ -24,5 +42,6 @@
   },
   "bugs": {
     "url": "https://github.com/BrightID/DAppNodePackage-IDChain/issues"
-  }
+  },
+  "avatar": "/ipfs/QmdJyHFAYsbDAM84NKem38vEPsFtCcztoxLuQac5312eEq"
 }
