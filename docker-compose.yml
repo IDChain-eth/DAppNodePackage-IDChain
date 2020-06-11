@@ -9,9 +9,8 @@ services:
       - 'EXTRA_OPTS=--rpcapi eth,net,web3,txpool'
       - SYNCMODE=fast
     ports:
-      - '30303'
-      - 30303/udp
-      - 30304/udp
+      - '30329:30329'
+      - '30329:30329/udp'
     restart: always
 volumes:
   idchain: {}
