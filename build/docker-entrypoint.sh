@@ -15,7 +15,7 @@ if [ "$1" = 'idchain' ]; then
     echo "DAppNode config vars:"
     echo "  SYNCMODE: $SYNCMODE"
     echo "  EXTRA_OPTS: $EXTRA_OPTS"
-    exec geth --datadir /idchain --networkid 74 --rpc --rpcaddr 0.0.0.0 --rpccorsdomain "*" --rpcvhosts "*" --ws --wsorigins "*" --wsaddr 0.0.0.0 --nousb --syncmode $SYNCMODE $EXTRA_OPTS
+    exec geth --datadir /idchain --networkid 74 --port 30329 --rpc --rpcaddr 0.0.0.0 --rpccorsdomain "*" --rpcvhosts "*" --ws --wsorigins "*" --wsaddr 0.0.0.0 --nousb --syncmode $SYNCMODE $EXTRA_OPTS
     # exec echo "done!"
 fi
 
