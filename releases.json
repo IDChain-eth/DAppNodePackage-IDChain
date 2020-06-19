@@ -3,7 +3,16 @@
     "hash": "/ipfs/QmTxeJrdmemsswp6R7c8QhE4vT2tCBRxpWmuK3eYSrMis7",
     "type": "manifest",
     "uploadedTo": {
-      "dappnode": "Thu, 11 Jun 2020 15:08:39 GMT"
-    }
+      "dappnode": "Thu, 11 Jun 2020 20:12:09 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=idchain.dnp.dappnode.eth&v=0.0.1&h=%2Fipfs%2FQmTxeJrdmemsswp6R7c8QhE4vT2tCBRxpWmuK3eYSrMis7&d=0x7099b4d99876480fcc0ac46d7809b7287a946050"
+  },
+  "1.0.0": {
+    "hash": "/ipfs/QmdDX2Et8TogyL2pCfYdTncQVnQq3H4EFrrZkbUTToHrzq",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Thu, 11 Jun 2020 20:18:04 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=idchain.dnp.dappnode.eth&v=1.0.0&h=%2Fipfs%2FQmdDX2Et8TogyL2pCfYdTncQVnQq3H4EFrrZkbUTToHrzq&d=0x7099b4d99876480fcc0ac46d7809b7287a946050"
   }
 }
