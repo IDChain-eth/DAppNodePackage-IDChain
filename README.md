@@ -1,64 +1,30 @@
 # BrightID IDChain DAppNode package
 
-You can use this package without installing it in your DAppNode following these instructions:
+General information about IDChain is available at https://github.com/BrightID/IDChain.
 
-## Prerequisites
+## Installation
+If you just want to run a node, there are no extra actions necessary. Install the DAppNodePackage as usual.
+Once the node is running you will see the sync status on the Dashboard.
 
-- git
+## Become IDChain validator
+Note: `$EXTRA_OPTS` and `$SYNCMODE` variables can be modified on your DAppNode at http://my.dappnode/#/packages/idchain.dnp.dappnode.eth/config.
+### Preparation
+ - Change `$EXTRA_OPTS` to include `--rpcapi personal,clique`
+ - Attach to your IDChain instance on the dappnode: `geth attach http://idchain.dappnode:8545`
+ - Create or import an account to be used for validating, using geth `personal` namespace functions 
+ (see https://geth.ethereum.org/docs/rpc/ns-personal)
+ - If you created a new account, make sure to backup the keystore. Go to 
+ http://my.dappnode/#/packages/idchain.dnp.dappnode.eth/file-manager and enter `/idchain/keystore` 
+ in the _DOWNLOAD FILE FROM PACKAGE_ form. Download keystore.zip and store in a secure location.
+ - Inform other validators to propose your account for validating
+ - Check clique status to see if you are approved using `clique.status()`
 
-   Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) commandline tool.
-
-- docker
-
-   Install [docker](https://docs.docker.com/engine/installation). The community edition (docker-ce) will work. In Linux make sure you grant permissions to the current user to use docker by adding current user to docker group, `sudo usermod -aG docker $USER`. Once you update the users group, exit from the current terminal and open a new one to make effect.
-
-- docker-compose
-
-   Install [docker-compose](https://docs.docker.com/compose/install)
-   
-**Note**: Make sure you can run `git`, `docker ps`, `docker-compose` without any issue and without sudo command.
-
-
-## Buidling
-
-`docker-compose build`
-
-## Running
-
-### Start
-
-`docker-compose up -d`
-
-### View logs
-
-`docker-compose logs -f`
-
-### Stop
-
-`docker-compose down`
-
-## Extra options
-
-You can edit the `docker-compose.yml` and add extra options, such as:
-```
- - EXTRA_OPTS=--wsapi db,eth,net,ssh,miner,web3,personal,admin,txpool
-```
-
-## Connect using web3js
-
-If the package is running and you're connected to your dappnode you can use:
-```
-var Web3 = require('web3');
-var web3 = new Web3('ws://idchain.dappnode:8546')
-web3.eth.getBlockNumber().then(console.log)
-```
-In case you are running it locally:
-```
-var Web3 = require('web3');
-var web3 = new Web3('ws://127.0.0.1:8546')
-web3.eth.getBlockNumber().then(console.log)
-```
-
-## License
-
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details
+### Start validating
+ Once you are approved you have to restart idchain with mining enabled and your validating account unlocked:
+ - Create a txtfile with the passphrase required to unlock the validator account: `echo <PASSPHRASE> > passphrase.txt`
+ - Upload `passphrase.txt` to the dappnode filesystem into `/idchain/` folder (Use http://my.dappnode/#/packages/idchain.dnp.dappnode.eth/file-manager)
+ - Change `$EXTRA_OPTS` to unlock your signer account and start mining. It should include `--miner.gasprice 10000000000 
+ --mine --unlock <your signer account address> --password /idchain/passphrase.txt --allow-insecure-unlock`. (`--allow-insecure-unlock`
+ is a tolerable risk, as the rpc api is only exposed over the DappNode VPN)
+ - Change `$SYNCMODE` to `full`
+ - Save new config. Your IDChain node will restart and should start validating blocks!
