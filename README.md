@@ -28,3 +28,18 @@ Note: `$EXTRA_OPTS` and `$SYNCMODE` variables can be modified on your DAppNode a
  is a tolerable risk, as the rpc api is only exposed over the DappNode VPN)
  - Change `$SYNCMODE` to `full`
  - Save new config. Your IDChain node will restart and should start validating blocks!
+
+# DNP Development
+
+### Preconditions
+ - Install dappnode SDK: `npm install -g @dappnode/dappnodesdk`
+
+### Build and Publish
+1. commit changes to `dev` branch. 
+1. *Optional*: Update `upstreamVersion` in `dappnode_package.json` to match the IDChain version
+1. Build the DAppNode package (`dappnodesdk build`) and test installation on your DAppNode 
+1. If package works as expected, merge changes to `master` branch (via pull request from `dev` to `master`)
+1. Checkout master branch
+1. Build the DAppNode package: `dappnodesdk build`
+1. Publish the package: `npx @dappnode/dappnodesdk publish <major|minor|patch> --developer_address <developer ethereum address>`
+1. Above step will update some files with the new version and ipfs hashes. Commit all these changes to the master branch.
