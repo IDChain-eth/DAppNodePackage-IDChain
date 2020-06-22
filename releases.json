@@ -5,5 +5,13 @@
     "uploadedTo": {
       "dappnode": "Mon, 22 Jun 2020 08:54:31 GMT"
     }
+  },
+  "1.0.0": {
+    "hash": "/ipfs/QmNSY4L1eQyLjE6iiNyWzPNbqu9zWV8iFD3W4aEMbJxBwE",
+    "type": "manifest",
+    "uploadedTo": {
+      "dappnode": "Mon, 22 Jun 2020 10:47:25 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=idchain.public.dappnode.eth&v=1.0.0&h=%2Fipfs%2FQmNSY4L1eQyLjE6iiNyWzPNbqu9zWV8iFD3W4aEMbJxBwE&d=0x7099b4d99876480fcc0ac46d7809b7287a946050"
   }
 }

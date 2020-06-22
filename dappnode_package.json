@@ -1,6 +1,6 @@
 {
   "name": "idchain.public.dappnode.eth",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "upstreamVersion": "v1.9.14",
   "shortDescription": "IDChain from BrightID.",
   "description": "Ethereum-based proof-of-authority blockchain with democratically-elected validators, unique human accounts; used by BrightID for consensus.",
@@ -18,9 +18,9 @@
       "30329:30329",
       "30329:30329/udp"
     ],
-    "path": "idchain.public.dappnode.eth_0.0.1.tar.xz",
-    "hash": "/ipfs/Qma8pEicNhTiQj9h96z2xBMfTFnQJYgYFqHzMpDGk73pZV",
-    "size": 20465164
+    "path": "idchain.public.dappnode.eth_1.0.0.tar.xz",
+    "hash": "/ipfs/QmbakJAjVQQoKGTcA57BJjsAbhZT2fYAgMw8SEb9gKNmB9",
+    "size": 20465160
   },
   "chain": "ethereum",
   "author": "BrightID developers <support@brightid.org> (https://github.com/BrightID)",
