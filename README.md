@@ -6,7 +6,7 @@ General information about IDChain is available at https://github.com/BrightID/ID
 If you just want to run a node, there are no extra actions necessary. Install the DAppNodePackage as usual.
 Once the node is running you will see the sync status on the Dashboard.
 
-## Connecting to your IDChain instance
+### Connecting to your IDChain instance
 The rpc API of your personal IDChain node is available via:
  - http: `http://idchain.dappnode:8545`
  - Websocket: `ws://idchain.dappnode:8545`
