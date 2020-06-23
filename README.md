@@ -77,8 +77,7 @@ To import your validator account from the saved keystore.zip:
 
 #### Create vote to Publish package:
 1. Open the pre-filled publish link (The last line of `dappnodeSDK publish` command)
-1. Double-check that the developer address is set to BDEV agent (0x7099b4d99876480fcc0ac46d7809b7287a946050)
-1. Double-check that your "hot" account is selected in Frame
+1. Double-check that your "smart" BDEV agent account is selected in Frame
 1. Click "Connect" Button. This will actually connect the page with web3 from the Frame extension.
    1. If this is the first time you use frame with dappnode, approve the connection request from `my.dappnode` in frame
 1. Click "Publish" button
