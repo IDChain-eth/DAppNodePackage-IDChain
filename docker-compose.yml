@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   idchain.public.dappnode.eth:
-    image: 'idchain.public.dappnode.eth:1.0.0'
+    image: 'idchain.public.dappnode.eth:1.0.1'
     build: ./build
     volumes:
       - 'idchain:/idchain'
