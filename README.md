@@ -67,3 +67,23 @@ To import your validator account from the saved keystore.zip:
 1. Build the DAppNode package: `dappnodesdk build`
 1. Publish the package: `npx @dappnode/dappnodesdk publish <major|minor|patch> --developer_address <developer ethereum address>`
 1. Above step will update some files with the new version and ipfs hashes. Commit all these changes to the master branch.
+
+### Publish through Aragon BDEV agent
+**Preconditions**
+ - install frame.sh
+ - import "hot" (your BDev token holding) account and "Smart" (The BDev agent) account in frame
+ - Metamask extension is disabled in your browser
+ - Frame extension is activated in your browser
+
+#### Create vote to Publish package:
+1. Open the pre-filled publish link (The last line of `dappnodeSDK publish` command)
+1. Double-check that the developer address is set to BDEV agent (0x7099b4d99876480fcc0ac46d7809b7287a946050)
+1. Double-check that your "hot" account is selected in Frame
+1. Click "Connect" Button. This will actually connect the page with web3 from the Frame extension.
+   1. If this is the first time you use frame with dappnode, approve the connection request from `my.dappnode` in frame
+1. Click "Publish" button
+1. Approve the transaction in Frame
+
+Now a new vote should be created in BDEV Aragon! (Similar to e.g. https://mainnet.aragon.org/#/brightiddev/0x52fcd2e55bb7eb78ff83b6a5648d452b5671cec4/vote/58/)
+
+Once the vote gets enacted, the BDEV agent will execute the publish transaction.
