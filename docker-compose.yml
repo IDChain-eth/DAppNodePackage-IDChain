@@ -3,5 +3,14 @@ services:
   idchain.public.dappnode.eth:
     image: 'idchain.public.dappnode.eth:1.0.0'
     build: ./build
+    volumes:
+      - 'idchain:/idchain'
+    environment:
+      - 'EXTRA_OPTS=--rpcapi eth,net,web3,txpool'
+      - SYNCMODE=fast
+    ports:
+      - '30329:30329'
+      - '30329:30329/udp'
+    restart: always
 volumes:
   idchain: {}
