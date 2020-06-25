@@ -67,7 +67,7 @@ To import your validator account from the saved keystore.zip:
 1. Increase version number: `dappnodesdk increase <major|minor|patch>
 1. Build the DAppNode package: `dappnodesdk build`
 1. Prepare publishing: `npx @dappnode/dappnodesdk publish <major|minor|patch>`
-1. Publish through BDEV agent following [instructions below](#publish)
+1. Publish through BDEV agent following [instructions below](#publish-through-aragon-bdev-agent)
 1. Commit all changed files to the master branch.
 
 ### Publish through Aragon BDEV agent
