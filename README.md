@@ -3,7 +3,9 @@
 General information about IDChain is available at https://github.com/BrightID/IDChain.
 
 ## Installation
-The latest package version is available on [DAppNode explorer](https://dappnode.github.io/explorer/#/repo/0x6a111e20889ace99ca14c1ab38cf6c1176ed0ae7). To directly install the latest version follow this link: 
+The IDChain package is published by the BrightID DAO on the DAppNode public registry ([DAppNode explorer](https://dappnode.github.io/explorer/#/repo/0x6a111e20889ace99ca14c1ab38cf6c1176ed0ae7)).
+
+To install the latest version follow this link: 
 
 **http://my.dappnode/#/installer/idchain.public.dappnode.eth**
 
