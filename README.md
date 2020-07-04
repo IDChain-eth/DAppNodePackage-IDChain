@@ -3,6 +3,10 @@
 General information about IDChain is available at https://github.com/BrightID/IDChain.
 
 ## Installation
+The latest package version is available on [DAppNode explorer](https://dappnode.github.io/explorer/#/repo/0x6a111e20889ace99ca14c1ab38cf6c1176ed0ae7). To directly install the latest version follow this link: 
+
+**http://my.dappnode/#/installer/idchain.public.dappnode.eth**
+
 If you just want to run a node, there are no extra actions necessary. Install the DAppNodePackage as usual.
 Once the node is running you will see the sync status on the Dashboard.
 
