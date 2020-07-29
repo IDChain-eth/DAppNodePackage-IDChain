@@ -1,7 +1,7 @@
 {
   "name": "idchain.public.dappnode.eth",
   "version": "1.0.0",
-  "upstreamVersion": "v1.9.14",
+  "upstreamVersion": "idc1.9.18",
   "shortDescription": "IDChain from BrightID.",
   "description": "Ethereum-based proof-of-authority blockchain with democratically-elected validators, unique human accounts; used by BrightID for consensus.",
   "type": "library",
