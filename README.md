@@ -3,6 +3,12 @@
 General information about IDChain is available at https://github.com/BrightID/IDChain.
 
 ## Installation
+The IDChain package is published by the BrightID DAO on the DAppNode public registry ([DAppNode explorer](https://dappnode.github.io/explorer/#/repo/0x6a111e20889ace99ca14c1ab38cf6c1176ed0ae7)).
+
+To install the latest version follow this link: 
+
+**http://my.dappnode/#/installer/idchain.public.dappnode.eth**
+
 If you just want to run a node, there are no extra actions necessary. Install the DAppNodePackage as usual.
 Once the node is running you will see the sync status on the Dashboard.
 
@@ -59,21 +65,23 @@ To import your validator account from the saved keystore.zip:
  - Install dappnode SDK: `npm install -g @dappnode/dappnodesdk`
 
 ### Build and Publish
-1. commit changes to `dev` branch. 
-1. *Optional*: Update `upstreamVersion` in `dappnode_package.json` to match the IDChain version
+1. commit changes to `dev` branch. (to publish a new release of idchain just update the `git clone` line in `build/DockerFile`)
+1. If the IDChain version changes: Update `upstreamVersion` in `dappnode_package.json` to match the IDChain version
 1. Build the DAppNode package (`dappnodesdk build`) and test installation on your DAppNode 
 1. If package works as expected, merge changes to `master` branch (via pull request from `dev` to `master`)
 1. Checkout master branch
+1. Increase version number: `dappnodesdk increase <major|minor|patch>
 1. Build the DAppNode package: `dappnodesdk build`
-1. Publish the package: `npx @dappnode/dappnodesdk publish <major|minor|patch> --developer_address <developer ethereum address>`
-1. Above step will update some files with the new version and ipfs hashes. Commit all these changes to the master branch.
+1. Prepare publishing: `npx @dappnode/dappnodesdk publish <major|minor|patch>`
+1. Publish through BDEV agent following [instructions below](#publish-through-aragon-bdev-agent)
+1. Commit all changed files to the master branch.
 
 ### Publish through Aragon BDEV agent
 **Preconditions**
- - install frame.sh
- - import "hot" (your BDev token holding) account and "Smart" (The BDev agent) account in frame
+ - "frame.sh" is installed
+ - "hot" (your BDev token holding) account and "Smart" (The BDev agent) account are imported in frame
  - Metamask extension is disabled in your browser
- - Frame extension is activated in your browser
+ - Frame extension is enabled in your browser
 
 #### Create vote to Publish package:
 1. Open the pre-filled publish link (The last line of `dappnodeSDK publish` command)
