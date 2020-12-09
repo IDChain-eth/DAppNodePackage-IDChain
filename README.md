@@ -15,7 +15,7 @@ Once the node is running you will see the sync status on the Dashboard.
 ### Connecting to your IDChain instance
 The rpc API of your personal IDChain node is available via:
  - http: `http://idchain.public.dappnode:8545`
- - Websocket: `ws://idchain.public.dappnode:8545`
+ - Websocket: `ws://idchain.public.dappnode:8546`
 
 ## Become IDChain validator
 > Note: `$EXTRA_OPTS` and `$SYNCMODE` variables can be modified on your DAppNode at http://my.dappnode/#/packages/idchain.public.dappnode.eth/config.
