@@ -1,18 +1,20 @@
 {
   "name": "idchain.public.dappnode.eth",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "upstreamVersion": "idc1.9.18",
   "shortDescription": "IDChain from BrightID.",
   "description": "Ethereum-based proof-of-authority blockchain with democratically-elected validators, unique human accounts; used by BrightID for consensus.",
-  "type": "library",
+  "type": "service",
+  "architectures": ["linux/amd64", "linux/arm64"],
   "chain": "ethereum",
-  "author": "BrightID developers <support@brightid.org> (https://github.com/BrightID)",
+  "author": "BrightID developers <support@brightid.org> (https://github.com/IDChain-eth)",
   "contributors": [
-    "Michael Bauer <michael@brightid.org>"
+    "Michael Bauer <michael@m-bauer.org>"
   ],
   "categories": [
     "Blockchain"
   ],
+  "keywords": ["brightid", "idchain"],
   "license": "GLP-3.0",
   "links": {
     "endpoint": "http://idchain.public.dappnode:8545",
