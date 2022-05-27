@@ -14,15 +14,15 @@ Once the node is running you will see the sync status on the Dashboard.
 
 ### Connecting to your IDChain instance
 The rpc API of your personal IDChain node is available via:
- - http: `http://idchain.dappnode:8545`
- - Websocket: `ws://idchain.dappnode:8545`
+ - http: `http://idchain.public.dappnode:8545`
+ - Websocket: `ws://idchain.public.dappnode:8546`
 
 ## Become IDChain validator
 > Note: `$EXTRA_OPTS` and `$SYNCMODE` variables can be modified on your DAppNode at http://my.dappnode/#/packages/idchain.public.dappnode.eth/config.
 
 ### Preparation
  - Change `$EXTRA_OPTS` to include `--rpcapi personal,clique`
- - Attach to your IDChain instance on the dappnode: `geth attach http://idchain.dappnode:8545`
+ - Attach to your IDChain instance on the dappnode: `geth attach http://idchain.public.dappnode:8545`
  - Create or import an account to be used for validating, using geth `personal` namespace functions 
  (see https://geth.ethereum.org/docs/rpc/ns-personal)
  - If you created a new account, make sure to backup the keystore. Go to 

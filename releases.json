@@ -21,5 +21,12 @@
       "dappnode": "Tue, 23 Jun 2020 14:19:32 GMT"
     },
     "link": "http://my.dappnode/#/sdk/publish/r=idchain.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmcvbar89MAUwsqzxwStwLQLofqdVm8gLpvoeSv4eefQDF"
+  },
+  "1.1.0": {
+    "hash": "/ipfs/Qmbq7BvJy7wgg8W5aLHoP6aXdLnrcSh14BtfeKhaV6QDoe",
+    "uploadedTo": {
+      "dappnode": "Wed, 29 Jul 2020 13:11:18 GMT"
+    },
+    "link": "http://my.dappnode/#/sdk/publish/r=idchain.public.dappnode.eth&v=1.1.0&h=%2Fipfs%2FQmbq7BvJy7wgg8W5aLHoP6aXdLnrcSh14BtfeKhaV6QDoe"
   }
 }
