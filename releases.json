@@ -23,10 +23,10 @@
     "link": "http://my.dappnode/#/sdk/publish/r=idchain.public.dappnode.eth&v=1.0.1&h=%2Fipfs%2FQmcvbar89MAUwsqzxwStwLQLofqdVm8gLpvoeSv4eefQDF"
   },
   "1.1.0": {
-    "hash": "/ipfs/Qmbq7BvJy7wgg8W5aLHoP6aXdLnrcSh14BtfeKhaV6QDoe",
+    "hash": "/ipfs/QmZosjyWSKfEijA93ziwP3a8ykPVt2HoA1VDTrQ6PnmNj3",
     "uploadedTo": {
-      "dappnode": "Wed, 29 Jul 2020 13:11:18 GMT"
+      "dappnode": "Tue, 31 May 2022 08:05:29 GMT"
     },
-    "link": "http://my.dappnode/#/sdk/publish/r=idchain.public.dappnode.eth&v=1.1.0&h=%2Fipfs%2FQmbq7BvJy7wgg8W5aLHoP6aXdLnrcSh14BtfeKhaV6QDoe"
+    "link": "https://dappnode.github.io/sdk-publish/?r=idchain.public.dappnode.eth&v=1.1.0&h=%2Fipfs%2FQmZosjyWSKfEijA93ziwP3a8ykPVt2HoA1VDTrQ6PnmNj3"
   }
 }
